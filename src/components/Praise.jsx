@@ -135,12 +135,12 @@ const Praise = () => {
                 <div className="flex flex-wrap gap-3">
 
                     {traits.map((trait) => (
-                        <div
+                        <button
                             key={trait.id}
                             onClick={() => handleClick(trait.id)}
                             className={`border cursor-pointer rounded-lg py-1 px-2 ${trait.selected ? "bg-indigo-500" : ""}`}>
                             <span>{trait.name}</span>
-                        </div>
+                        </button>
                     ))}
                 </div>
 

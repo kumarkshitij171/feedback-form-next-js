@@ -4,13 +4,13 @@ const Star = ({ setRating, rating }) => {
         <div>
             <div className="flex ml-5 space-x-2 ">
                 {stars.map((star) => (
-                    <div
+                    <button
                         key={star}
                         className={`flex items-center text-3xl cursor-pointer mb-3 ${star <= rating ? 'text-yellow-500' : ''}`}
                         onClick={() => setRating(star)}
                     >
                         ★
-                    </div>
+                    </button>
                 ))}
             </div>
         </div>
